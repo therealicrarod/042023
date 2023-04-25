@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="61px" height="52px" viewBox="0 0 61 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>logoipsum-282</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="mockup" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="logoipsum-282" transform="translate(-701.000000, -1663.000000)" filter="url(#filter-1)">
+            <g transform="translate(701.000000, 1663.000000)">
+                <path d="M27.3081307,0 L61,33.8355727 L61,52 L45.277112,52 L45.277112,40.3653545 L20.8062506,15.7899182 L15.722888,15.7899182 L15.722888,52 L0,52 L0,0 L27.3081307,0 Z M45.277112,18.0456545 L45.277112,0 L61,0 L61,18.0456545 L45.277112,18.0456545 Z" id="Shape" fill="#212326" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

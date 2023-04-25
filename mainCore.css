@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,300;0,500;1,100;1,500&display=swap');
+
+/*Global Elements*/
+:root{
+    --main-color:#5E656D;
+    --secondary-color:#AFB2B6;
+    --gradient:linear-gradient(68deg, rgba(24,197,255,1) 0%, rgba(70,18,255,1) 50%, rgba(0,247,166,1) 100%);
+}
+/*Ends global elements*/
+
+/*Start DOM Elements*/
+
+/*--Common places--*/
+*{
+    font-family: 'IBM Plex Sans', sans-serif;
+    color:var(--main-color);
+}
+
+h1{
+    font-weight: 300;
+    font-size: clamp(2vw,37px,7vw);
+}
+
+h2{
+    font-weight: 100;
+    font-size: clamp(1.7vw,27px,5vw);  
+}
+
+h3{
+    font-weight: 300;
+    font-size: clamp(1.4vw,18px,5vw);
+}
+
+p, li, label, input{
+    font-weight: 300;
+    font-size: clamp(1.2vw,15px,5vw);
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+hr{
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.buttonWrapper{
+    display: flex;
+    justify-content: space-evenly;
+    width: 175px;
+    align-content: center;
+    width:clamp(100px,200px,250px);
+    background: linear-gradient(white, white) padding-box;
+    border-radius: 5px; 
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    transition-property: background-color,box-shadow;
+    transition-duration: 0.25s;
+}
+
+.buttonWrapper:hover{
+    box-shadow: 0px -2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.refBtn{
+    width: 100%;
+}
+
+button{
+    background: transparent;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.5vh 0.3vw;
+    border: none;
+    cursor: pointer;
+    font-size: clamp(1.2vw,15px,4vw);
+}
+.buttonWrapper{
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+button:active{
+    color: white;
+}
+
+.callIcon{
+    fill:var(--main-color);
+}
+
+button:active > .callIcon{
+    fill:white;
+}
+.buttonWrapper:has(button:active){
+    background: linear-gradient(68deg, rgba(24,197,255,1) 0%, rgba(70,18,255,1) 50%, rgba(0,247,166,1) 100%) border-box;
+}
+.whatsapp_logo, .callIcon{
+    width: clamp(1.5vw,30px,50px);
+}
+
+.white{
+    color:white;
+}
+
+/*--Ends Common Places--*/
+/*--Here lies the flexbox <3--*/
+
+nav, nav span, footer{
+    display: flex;
+}
+
+
+nav {
+    position: fixed;
+    background-color: rgba(277,277,277,.73);
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 150;
+}
+
+
+nav #logoWrapper{
+    width: 20%;
+}
+
+#menuWrapper {
+    display: flex;
+    text-align: center;
+    opacity: 100%;
+}
+
+#closeBtn{
+    display: none;
+}
+
+#logo{
+    font-weight: 500;
+    font-size: clamp(1.7vw,27px,5vw);
+    font-style: italic;
+    width: 100%;
+    text-align: center;
+}
+
+nav span{
+    width: 30%;
+    justify-content: space-evenly;
+}
+
+#logoLink{
+    display: flex;
+    align-items: center;
+    width: clamp(150px, 15%, 27%);
+}
+
+#logo_persistent{
+    width: 100%;
+}
+
+#menuBurger{
+    display: none;
+}
+
+.navElements p:hover{
+    font-weight: 200;
+}
+.navElements p:active{
+    font-weight: 100;
+    color:var(--secondary-color)
+}
+#EN:hover{
+    font-weight: 200;
+}
+#EN:active{
+    font-weight: 100;
+    color:var(--secondary-color)
+}
+/*--Here ends flexbox--*/
+/*Specific elements*/
+#logo_persistent{
+    width: 50%;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #5E656D;
+    width: 100%;
+    color:white;
+    padding: 35px 0px;
+    margin-top:35px ;
+}
+#EN{
+    cursor: pointer;
+}
+#newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+#newsletter input{
+    width: 80%;
+    margin: 20px 0px;
+}
+#newsletterSubmit{
+    width: 80%;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+}
+#footerContainer{
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    width: 80%;
+}
+.footerWrapper{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.footer{
+    margin: 0px;
+    color: white;
+    font-weight: 100;
+}
+.bold{
+    font-weight:300;
+    margin: 15px 0px;
+    color: white;
+}
+#emailNewsletter{
+    border: transparent;
+    border-top: 1px solid var(--secondary-color);
+    border-left: 1px solid var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
+    border-radius: 50px 0 0 50px;
+    background-color: transparent;
+    color: white;
+}
+
+#newsletterSubmit, #emailNewsletter{
+    transition-property: transform, opacity;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.footerSM{
+    width: clamp(30px,35px,40px);
+}
+#ourBrands{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    opacity: 35%;
+}
+#ourBrands span{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ourBrands{
+    width: 20%;
+    height: 25px;
+    object-fit: contain;
+}
+#socialMedia{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+/*Ends specific elements*/
+
+/*Ends DOM Elements*/
+
+/*Start media queries*/
+/*--
+xxlarge = 1921px,../
+xlarge = 1441px, 1920px/
+large = 1025px, 1440px/
+Mid = 641px , 1024px/ 
+small = .. , 641px
+--*/
+@media only screen and (min-width:1441px){
+    .buttonWrapper{
+        width: clamp(25vw, 300px, 30vw);
+        height: clamp(50px, 60px, 75px );
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:900px) {
+   
+   /*nav query*/
+    #menuWrapper{
+        display: none;
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 80vw;
+        height: 80vh;
+        left:0vw;
+        top: clamp(30px,5vh,60px);
+        background: rgba(277,277,277,.73);
+        z-index: 100;
+        border-radius: 25px;
+        opacity: 0%;
+        transition-property: left, opacity;
+        transition-duration: 500ms;
+        transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    #closeBtn{
+        display: block;
+    }
+    #menuBurger{
+        display: block;
+    }
+
+    /*ends nav query*/
+}
+@media only screen and (max-width:900px){
+    .buttonWrapper{
+        width: clamp(50vw, 300px, 65vw);
+        height: clamp(50px, 60px, 75px );
+        align-items: center;
+    }
+}
+@media only screen and (max-width:641px){
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    #footerContainer{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .footerWrapper{
+        width: 80%;
+        text-align: center;
+    }
+}
+/*End media queries*/
